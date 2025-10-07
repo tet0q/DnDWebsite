@@ -14,20 +14,42 @@
                 height: 200px;
                 padding: 0px;
             }
-        </style>
+        .nav-button {
+            display: inline-block; /* Essential for padding */
+            padding: 8px 15px;      
+            margin: 0 5px;          
+            border-radius: 5px;     
+            
+            text-decoration: none;  /* Remove underline */
+            color: #ffed8d;         /* Text color */
+            background-color: #3b7636; /* Button background */
+            border: 1px solid #ffed8d; 
+            
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-button:hover {
+            /* Hover effect */
+            background-color: #ffed8d; 
+            color: #1e501a;            /* Dark text on light background */
+            border-color: #ffed8d;
+        }
+        /* --- End Button Styling --- */
+    </style>
 </head>
 <body>
     
     <div class="header" style="font-size: 300%; color: #ffed8d; text-align: center; float: inline-end">
-            <p>
-                Weitere Infos
-            </p>
-        </div>
-        <div style="width: 100%; padding: 10px; background-color: #1e501a; font-size: 150%; text-align: center; float: inline-end;">
-            <a href="index.html.html">Home</a>
-            <a href="campaign.html">Die Kampagne</a>
-            <a href="characters.html">Charaktere</a>
-            <a href="maps.html">Karten</a>
+        <p>
+            Weitere Infos
+        </p>
+    </div>
+    
+    <div style="width: 100%; padding: 10px; background-color: #1e501a; font-size: 150%; text-align: center; float: inline-end;">
+        <a href="index.html.html" class="nav-button">Home</a>
+        <a href="campaign.html" class="nav-button">Die Kampagne</a>
+        <a href="characters.html" class="nav-button">Charaktere</a>
+        <a href="maps.html" class="nav-button">Karten</a>
     </div>
     <div>
         Falls ihr noch weitere Infos zu DnD haben wollt, schaut auf den folgenden Websites vorbei:

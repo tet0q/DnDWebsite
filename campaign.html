@@ -13,6 +13,30 @@
                 height: 200px;
                 padding: 0px;
             }
+            /* --- Button Styling for Links --- */
+            .nav-button {
+                /* Make it look like a button */
+                display: inline-block; /* Allows padding and width/height */
+                padding: 8px 15px;      /* Vertical and horizontal padding */
+                margin: 0 5px;          /* Space between buttons */
+                border-radius: 5px;     /* Slightly rounded corners */
+                
+                /* Override default link appearance */
+                text-decoration: none;  /* Remove the underline */
+                color: #ffed8d;         /* Keep the text color light (from the parent div) */
+                background-color: #3b7636; /* A slightly lighter green for the button background */
+                border: 1px solid #ffed8d; /* A subtle border */
+                
+                /* Transition for a smooth hover effect */
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+            .nav-button:hover {
+                /* Change color on hover for visual feedback */
+                background-color: #ffed8d; /* Swap colors */
+                color: #1e501a;            /* Dark text on light background */
+                border-color: #ffed8d;
+            }
         </style>
 
     </head>
@@ -22,11 +46,12 @@
                 Die Kampagne
             </p>
         </div>
+        
         <div style="width: 100%; padding: 10px; background-color: #1e501a; font-size: 150%; text-align: center; float: inline-end;">
-            <a href="index.html.html">Home</a>
-            <a href="characters.html">Charaktere</a>
-            <a href="maps.html">Karten</a>
-            <a href="furtherInfos.html">Weitere Infos</a>
+            <a href="index.html.html" class="nav-button">Home</a>
+            <a href="characters.html" class="nav-button">Charaktere</a>
+            <a href="maps.html" class="nav-button">Karten</a>
+            <a href="furtherInfos.html" class="nav-button">Weitere Infos</a>
         </div>
         <div style="width: 90%; padding: 50px; float: inline-start;">
             <p>
